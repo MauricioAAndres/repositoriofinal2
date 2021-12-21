@@ -1,0 +1,202 @@
+.contenedorcomo {
+  width: 100%;
+  .fondo {
+  }
+}
+
+// .container {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding-left: $gap/2;
+//   padding-right: $gap/2;
+// }
+
+.gs\:grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: $gap/-2;
+  margin-right: $gap/-2;
+}
+
+[class*=".col-"],
+.col {
+  width: 100%;
+  max-width: 100%;
+  padding-left: $gap/2;
+  margin-right: $gap/-2;
+}
+
+@mixin grid-system($mq) {
+  .#{$mq} {
+    flex: 1 0 0;
+  }
+
+  @for $col from 1 through $cols {
+    .#{$mq}-#{$col} {
+      flex: 0 0 (100% / $col) * $col;
+      max-width: (100% / $col) * $col;
+    }
+  }
+}
+
+@include grid-system(col);
+
+@media screen and (min-width: 768px) {
+  @include grid-system(sm\:col);
+}
+
+.col-ex {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+/*///////////////////////////////*/
+
+.titulo {
+  font-size: $fontt;
+  color: white;
+  &uno {
+    text-align: center;
+    font-size: $fonts * 2;
+    font-weight: bolder;
+    padding: $space2;
+    color: black;
+    padding-top: $fonts * 6;
+  }
+  &dos {
+    text-align: center;
+    color: white;
+    font-size: $fontt;
+    font-weight: bolder;
+  }
+}
+
+.subtitulo {
+  font-size: $fonts;
+  padding: $space1;
+  color: white;
+  &uno {
+    color: black;
+    font-size: $fonts;
+    text-align: center;
+    font-weight: bolder;
+    padding: $space1;
+  }
+}
+
+.parrafo {
+  font-size: $fontp;
+  text-align: center;
+  color: white;
+  padding-left: 15px;
+  &st {
+    text-align: start;
+    color: white;
+    font-size: $fontp;
+    padding-left: $fontp;
+  }
+}
+
+.logo {
+  display: flex;
+  float: left;
+  width: 180px;
+  height: 80px;
+  padding-right: 70px;
+  filter: opacity(50%);
+}
+
+.nav {
+  font-size: $fontp - 2;
+  &_all {
+    background-color: $black;
+    position: fixed;
+    font-family: "Playfair Display", serif;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  &_tt {
+    display: flex;
+    justify-content: end;
+    padding-top: 18px;
+    margin-right: $gap;
+  }
+  color: white;
+  &:hover {
+    color: $gris;
+    transition: all 0.5s;
+    font-size: $fontp;
+  }
+}
+
+.fondo {
+  background-image: $fondo1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &uno {
+    background-image: $fondo1;
+    padding-bottom: $fonts * 2;
+  }
+}
+
+.imagen2 {
+  padding-bottom: $fontt;
+}
+
+.header-fondo {
+  background-image: $fondo2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: $fontp;
+  padding-top: $fonts;
+}
+
+.seccion5 {
+  background-color: $black2;
+  padding-bottom: $fontt;
+  padding-top: $fontt;
+}
+
+.logofoot {
+  width: 130px;
+  height: 80px;
+  padding-bottom: $fontp;
+}
+
+.logofoot2 {
+  width: $gap * 2;
+  height: $gap * 2;
+  padding-bottom: $gap/2;
+}
+
+/*///////////*/
+
+@media screen and (max-width: 768px) {
+  .linea {
+    display: none;
+  }
+
+  .nav__all {
+    display: none;
+  }
+
+  .nav_ot {
+    display: none;
+  }
+
+  .logo {
+    filter: none;
+  }
+
+  .titulo {
+    &uno {
+      font-size: $fonts * 1.5;
+      padding: 0, 0, 0, 0;
+    }
+  }
+}

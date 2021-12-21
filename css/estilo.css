@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav--div {
+  background-color: rgba(0, 0, 0, 0.78);
+  position: fixed;
+  font-family: "Playfair Display", serif;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.logo {
+  display: flex;
+  float: left;
+  width: 180px;
+  height: 80px;
+  padding-right: 70px;
+  filter: opacity(50%);
+}
+
+.nav--bott--all {
+  display: flex;
+  justify-content: end;
+  color: white;
+  font-weight: 250;
+  font-size: 16px;
+  padding-top: 18px;
+  margin-right: 25px;
+}
+
+.nav_bott:link,
+.nav_bott:visited {
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.nav_bott:hover,
+.nav_bott:active {
+  color: rgb(184, 184, 184);
+  font-size: 18px;
+}
+
+/*/////////////////////SECCION 1 /////////////////////////////////*/
+
+.header-fondo {
+  background-image: url(/imagenes/nuevaimagen.jpg);
+  background-size: cover;
+  padding-bottom: 1rem;
+}
+
+.header-fondo2 {
+  background-image: url(/imagenes/fondonegro.jpg);
+  background-size: cover;
+  padding-bottom: 1rem;
+}
+
+.titulo {
+  padding-top: 15rem;
+  text-decoration: underline;
+  font-stretch: ultra-expanded;
+  font-size: 100px;
+  font-stretch: extra-expanded;
+  font-weight: bolder;
+  font-family: "Road Rage", cursive;
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 5rem;
+}
+
+.parrafo1 {
+  font-size: 1.8rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  font-family: "Playfair Display", serif;
+}
+
+.linea {
+  filter: hue-rotate(230deg);
+}
+
+.parrafo2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1513aa;
+}
+
+.boton {
+  margin-top: 2rem;
+  margin-left: 45%;
+  margin-right: 45%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.boton:link,
+.boton:visited {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 9px;
+  background-color: #1e2cac;
+  color: rgb(255, 255, 255);
+  transition: all 0.8s;
+}
+
+.boton:hover,
+.boton:active {
+  color: rgb(184, 184, 184);
+  font-size: 18px;
+  background-color: #131b86;
+}
+
+/* ////////////////////// SECCION 2 /////////////////////////////////////// */
+
+.seccion2 {
+  background-image: url(/imagenes/fondo2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 42px;
+  padding-top: 40px;
+}
+
+.titulo2 {
+  font-size: 100px;
+  padding-left: 2rem;
+  padding-bottom: 35px;
+  padding-top: 25px;
+  color: ivory;
+  font-family: "Road Rage", cursive;
+}
+
+.parrafo3 {
+  font-size: 55px;
+  padding-left: 2rem;
+  padding-bottom: 35px;
+  padding-top: 25px;
+  color: ivory;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.parrafo4 {
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: lavenderblush;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.linea2 {
+  filter: hue-rotate(230deg);
+}
+
+.linea3 {
+  padding-left: 47%;
+  filter: hue-rotate(230deg);
+}
+
+.imagenes {
+  padding-top: 2rem;
+  filter: hue-rotate(230deg);
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagen1 {
+  padding-left: 2.1rem;
+}
+
+.imagen2 {
+  padding-left: 2.3rem;
+}
+
+.texto1 {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  color: lavenderblush;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.diseño {
+  padding-left: 0.6rem;
+}
+
+/*////////////////// SECCION 3 /////////////////////////////////////*/
+
+.separador1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1px;
+  background-color: #1e2cac;
+  color: azure;
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.seccion3 {
+  background-image: url(/imagenes/fondo4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 62px;
+  padding-top: 40px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////FOOTER//////////////////////////////////////////////////////////////*/
+
+.seccion5 {
+  background-color: #292c2f;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.logofoot {
+  width: 130px;
+  height: 80px;
+  padding-bottom: 16px;
+}
+
+.logofoot2 {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 12px;
+}
+
+.texto-footer {
+  padding-top: 16px;
+  color: azure;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.texto-footer2 {
+  padding-bottom: 10px;
+}
+
+/*////////////////////////////*/
+
+.error1 {
+  padding-top: 7rem;
+  padding-left: 3rem;
+  text-decoration: underline;
+  font-stretch: ultra-expanded;
+  font-size: 100px;
+  font-stretch: extra-expanded;
+  font-weight: bolder;
+  font-family: "Road Rage", cursive;
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+}
+
+.error2 {
+  padding-left: 2rem;
+  font-stretch: ultra-expanded;
+  font-size: 50px;
+  font-stretch: extra-expanded;
+  font-weight: bolder;
+  font-family: "Road Rage", cursive;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 3rem;
+}
